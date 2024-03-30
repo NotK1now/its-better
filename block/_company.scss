@@ -1,0 +1,92 @@
+.company {
+    position: relative;
+  
+    background: $company-bg__color;
+  
+    &__img
+
+    &::before {
+      position: absolute;
+      left: 0px;
+  
+    }
+  
+    &__wrapper {
+      gap: 131px;
+  
+      @include FlexStyle;
+      padding: 50px 0;
+    }
+    &__left {
+      z-index: 10;
+  
+      width: 445px;
+    }
+    &__title {
+      color: #fbfcfe;
+  
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+    }
+    &__text {
+      padding: 24px 0 32px 0;
+      color: #fbfcfe;
+  
+      font-size: 15px;
+      line-height: 28px;
+  
+      mix-blend-mode: normal;
+      opacity: 0.7;
+    }
+    &__btn {
+      @include Btn;
+      background: $company-bg__color;
+      border: 2px solid white;
+      width: 130px;
+  
+      &:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  
+    &__right {
+      width: 536px;
+      height: 103px;
+      background-image: url(../img/Group\ 9.png);
+      
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .company {
+      &::before {
+        left: -345px;
+      }
+      &__left {
+        width: 80%;
+      }
+  
+      &__right {
+        
+        width: 280px;
+        height: 160px;
+  
+        background-image: url(../img/Group\ 9.png);
+      }
+      &__title {
+        font-size: 32px;
+        line-height: 36px;
+      }
+      &__text {
+        font-size: 15px;
+        line-height: 28px;
+      }
+    }
+  }
+  

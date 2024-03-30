@@ -1,0 +1,61 @@
+.footer {
+    position: relative;
+  
+    background: $company-bg__color;
+  
+  
+    &::before {
+      position: absolute;
+      right: 0px;
+      bottom: -5px;
+  
+      opacity: 0.15;
+    }
+    &__wrapper {
+      @include FlexStyle;
+      gap: 64px;
+    }
+    &__link {
+      color: #969799;
+  
+      &:hover {
+        color: #fbfcfe;
+      }
+    }
+    &__media {
+      gap: 25px;
+      z-index: 1;
+      margin-left: auto;
+  
+      @include FlexStyle;
+    }
+  }
+  path {
+    &:hover {
+      fill: coral;
+      transition: all 0.5s linear;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .footer {
+      &::before {
+        left: 25px;
+      }
+      &__wrapper {
+        flex-direction: column;
+        gap: 30px;
+      }
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+  
+      &__media {
+        margin: 40px 0;
+      }
+    }
+  }
+ 
+  

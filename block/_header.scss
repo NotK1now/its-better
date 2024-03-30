@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+  
+    &::before {
+      position: absolute;
+      right: 0px;
+  
+      opacity: 0.15;
+    }
+    &__modal {
+      display: none;
+    }
+    &__bar {
+      display: none;
+    }
+  
+    &__wrapper {
+      gap: 64px;
+  
+      @include FlexStyle;
+    }
+    &__logo {
+      width: 136px;
+    }
+  
+    &__list {
+      display: flex;
+      gap: 53px;
+    }
+    &__btn {
+      @include Btn;
+      margin-left: auto;
+    }
+  
+    &__link {
+      color: #36536b;
+  
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+  
+      mix-blend-mode: normal;
+      opacity: 0.7;
+  
+      &:hover {
+        color: #000000;
+        transition: all 0.5s linear;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .header {
+  
+      &::before {
+        content: '';
+      }
+      &__wrapper {
+        gap: 200px;
+      }
+      &__btn {
+        display: block;
+      }
+      &__bar {
+        display: block;
+      }
+  
+      &__list {
+        display: none;
+      }
+  
+      &__btn {
+        display: none;
+      }
+    }
+  }
+  

@@ -1,0 +1,86 @@
+.ready {
+    position: relative;
+    &__wrapper {
+      @include FlexStyle;
+      gap: 220px;
+    }
+    &__title {
+      width: 445px;
+  
+      color: $title-color;
+  
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+  
+    }
+    &__input {
+      width: 445px;
+      @include Input;
+    }
+    &__btn {
+      position: absolute;
+      width: 180px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .ready {
+      &__wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 100px;
+        
+        text-align: center;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .ready {
+      &__wrapper {
+        flex-direction: column;
+        gap: 0;
+      }
+      &__title {
+        width: 90%;
+        font-size: 40px;
+        line-height: 40px;
+      }
+  
+      &__input {
+        display: block;
+        width: 330px;
+      }
+      &__btn {
+        width: 330px;
+        right: 45px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  @media only screen and (max-width: 370px) {
+    .ready {
+      &__wrapper {
+        flex-direction: column;
+        gap: 0;
+      }
+      &__title {
+        width: 90%;
+        font-size: 30px;
+        line-height: 30px;
+      }
+  
+      &__input {
+        display: block;
+        width: 300px;
+      }
+      &__btn {
+        width: 81%;
+        right: 35px;
+      }
+    }
+  }
+  

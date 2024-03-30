@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    
+    font-family: "Public Sans";
+    font-weight: 400;
+    font-style: normal;
+  }
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 40px 165px;
+    &__options {
+      width: 1440px;
+      margin: 0 auto;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  
+  @media only screen and (max-width: 425px) {
+    .container {
+      width: 100%;
+      padding: 20px;
+      &__options {
+        width: 100%;
+      }
+    }
+  }
+  
+  

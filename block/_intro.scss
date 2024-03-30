@@ -1,0 +1,80 @@
+.intro {
+    &__wrapper {
+      gap: 183px;
+  
+      @include FlexStyle;
+    }
+  
+    &__left {
+      width: 546px;
+    }
+    &__title {
+      color: $title-color;
+  
+  
+      font-family: "DM Serif Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 72px;
+      line-height: 72px;
+      letter-spacing: -0.553846px;
+  
+    }
+    &__form {
+      margin: 25px 0 16px 0;
+    }
+    &__btn {
+      position: relative;
+      z-index: 1000;
+  
+      margin-left: -178px;
+      @include Btn;
+    }
+    &__input{
+      @include Input;
+    }
+    &__text {
+      color: $text-color;
+  
+      padding-left: 20px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &__span {
+      color: #455664;
+      font-weight: 700;
+    }
+    &__right {
+      z-index: 1;
+      width: 262.5px;
+      height: 499.43px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .intro {
+      &__left {
+        width: 80%;
+        text-align: center;
+      }
+      &__input {
+        width: 330px;
+      }
+      &__btn {
+        width: 330px;
+        margin: 24px 0;
+      }
+      &__title {
+        width: 100%;
+        font-size: 40px;
+        line-height: 40px;
+      }
+      &__right{
+        background-image: url(/img/hero-phone.png);
+      }
+    }
+  }
+  
