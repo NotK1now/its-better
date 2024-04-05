@@ -428,8 +428,10 @@ a {
     width: 80%;
   }
   .company__right {
-    width: 280px;
+    width: 350px;
     height: 160px;
+    text-align: center;
+    margin-top: 30px;
   }
   .company__title {
     font-size: 32px;
